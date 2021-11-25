@@ -1,6 +1,6 @@
 ﻿
 
-// Calculate monthly wages
+// Calculate monthly wages till condition is reached 
 using System;
 namespace EmpWage5
 {
