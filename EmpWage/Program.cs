@@ -1,12 +1,24 @@
-﻿Using System;
+﻿//check employee is present or absent
+
+using System;
 namespace EmpWage
 {
-    class UC0
+    class UC1
     {
-        static void Main (string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("WELCOME TO EMPLOYEE WAGE PROGRAMS");
+            const int IS_FULL_TIME = 1;
+            Random random = new Random();
+            int empCheck = random.Next(0, 2);
+            if (empCheck == IS_FULL_TIME)
+            {
+                Console.WriteLine("EMPLOYEE IS PRESENT");
+            }
+            else
+            {
+                Console.WriteLine("EMPLOYEE IS ABSENT");
+            }
+
         }
     }
-
 }
